@@ -11,4 +11,7 @@
 
 #include <stdio.h>
 #include "header.hpp"
+void removeDuplicate0(char s[]);
+void removeDuplicate1(char s[]);
+void removeDuplicate2(char s[]);
 #endif /* __3_hpp */

@@ -24,7 +24,7 @@
 #include "1_3.hpp"
 
 /**
- 不可以开任何数组
+ 不可以开任何数组 O(n^2)
  */
 void removeDuplicate0(char s[]) {
     size_t len = strlen(s);
@@ -43,7 +43,7 @@ void removeDuplicate0(char s[]) {
 }
 
 /**
- 可以开一个毫不相关的数组
+ 可以开一个毫不相关的数组 O(n)
  */
 void removeDuplicate1(char s[]) {
     size_t len = strlen(s);
@@ -61,11 +61,20 @@ void removeDuplicate1(char s[]) {
 }
 
 /**
- 字符之后 a-z， 用一个整型的位就搞定
+ 字符之后 a-z， 用一个整型的位就搞定 O(n)
  */
 void removeDuplicate2(char s[]) {
     size_t len = strlen(s);
     if (len < 2) return;
+    int a = 0, p = 0;
+    for (int i = 0; i < len; ++i) {
+        int idx = (int)(s[i] - 'a');
+        if (!(a & (1 << idx))) {
+            s[p++] = s[i];
+            a |= 1 << idx;
+        }
+    }
+    s[p] = '\0';
 }
 
 
