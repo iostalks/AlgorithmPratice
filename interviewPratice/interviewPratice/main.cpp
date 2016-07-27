@@ -10,6 +10,8 @@
 #include "1_1.hpp"
 #include "1_2.hpp"
 #include "1_3.hpp"
+#include "1_4.hpp"
+#include "1_5.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -23,7 +25,6 @@ int main(int argc, const char * argv[]) {
     char s[] = "ddaeiouff";
     reverseVowel(s);
     cout << s << endl;
-#endif
     
     // 1.3
     char s1[] = "abcde";
@@ -40,5 +41,16 @@ int main(int argc, const char * argv[]) {
     
     cout << s1 << "\n" << s2 << "\n" << s3 << "\n" << s4 << "\n" << s5 << endl;
     
+    // 1.4
+    string s = "abcdef";
+    string t= "fecdab";
+    bool equal = isAnagrams(s, t);
+    cout << equal << endl;
     return 0;
+#endif
+
+    // 1.5
+    char m[100] = "I an  ";
+    repleace1(m);
+    cout << m << endl;
 }
