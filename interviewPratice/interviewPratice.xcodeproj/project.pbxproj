@@ -13,6 +13,7 @@
 		FE8D4DBB1D46E9E900751F80 /* 1_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE8D4DB91D46E9E900751F80 /* 1_3.cpp */; };
 		FE8D4DBE1D477B6F00751F80 /* 1_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE8D4DBC1D477B6F00751F80 /* 1_4.cpp */; };
 		FE8D4DC11D483BE900751F80 /* 1_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE8D4DBF1D483BE900751F80 /* 1_5.cpp */; };
+		FEF0E0781D4991120050468F /* 1_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEF0E0761D4991120050468F /* 1_6.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		FE8D4DBD1D477B6F00751F80 /* 1_4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 1_4.hpp; sourceTree = "<group>"; };
 		FE8D4DBF1D483BE900751F80 /* 1_5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1_5.cpp; sourceTree = "<group>"; };
 		FE8D4DC01D483BE900751F80 /* 1_5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 1_5.hpp; sourceTree = "<group>"; };
+		FEF0E0761D4991120050468F /* 1_6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1_6.cpp; sourceTree = "<group>"; };
+		FEF0E0771D4991120050468F /* 1_6.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 1_6.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				FE8D4DBC1D477B6F00751F80 /* 1_4.cpp */,
 				FE8D4DC01D483BE900751F80 /* 1_5.hpp */,
 				FE8D4DBF1D483BE900751F80 /* 1_5.cpp */,
+				FEF0E0771D4991120050468F /* 1_6.hpp */,
+				FEF0E0761D4991120050468F /* 1_6.cpp */,
 				FE8D4D9C1D4596B400751F80 /* main.cpp */,
 			);
 			path = interviewPratice;
@@ -148,6 +153,7 @@
 				FE8D4DAE1D45A7C700751F80 /* 1_2.cpp in Sources */,
 				FE8D4D9D1D4596B400751F80 /* main.cpp in Sources */,
 				FE8D4DBE1D477B6F00751F80 /* 1_4.cpp in Sources */,
+				FEF0E0781D4991120050468F /* 1_6.cpp in Sources */,
 				FE8D4DC11D483BE900751F80 /* 1_5.cpp in Sources */,
 				FE8D4DA81D45970500751F80 /* 1_1.cpp in Sources */,
 				FE8D4DBB1D46E9E900751F80 /* 1_3.cpp in Sources */,

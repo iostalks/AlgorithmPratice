@@ -12,6 +12,7 @@
 #include "1_3.hpp"
 #include "1_4.hpp"
 #include "1_5.hpp"
+#include "1_6.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -47,10 +48,31 @@ int main(int argc, const char * argv[]) {
     bool equal = isAnagrams(s, t);
     cout << equal << endl;
     return 0;
-#endif
 
     // 1.5
     char m[100] = "I an  ";
     repleace1(m);
     cout << m << endl;
+
+#endif
+    
+    // 1.6
+    int a[4][4] = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12},
+        {13, 14, 15, 16}
+    };
+    for(int i=0; i<4; ++i){
+        for(int j=0; j<4; ++j)
+            cout<<a[i][j]<<" ";
+        cout<<endl;
+    }
+    cout<<endl;
+    transpose(a, 4);
+    for(int i=0; i<4; ++i){
+        for(int j=0; j<4; ++j)
+            cout<<a[i][j]<<" ";
+        cout<<endl;
+    }
 }
