@@ -13,6 +13,7 @@
 #include "1_4.hpp"
 #include "1_5.hpp"
 #include "1_6.hpp"
+#include "1_7.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -54,7 +55,7 @@ int main(int argc, const char * argv[]) {
     repleace1(m);
     cout << m << endl;
 
-#endif
+
     
     // 1.6
     int a[4][4] = {
@@ -70,6 +71,44 @@ int main(int argc, const char * argv[]) {
     }
     cout<<endl;
     transpose(a, 4);
+    for(int i=0; i<4; ++i){
+        for(int j=0; j<4; ++j)
+            cout<<a[i][j]<<" ";
+        cout<<endl;
+    }
+#endif
+    
+    
+    int **a;
+    int row = 4;
+    int col = 5;
+    
+    a = (int **)malloc(row * sizeof(int*));
+    
+    for (int i = 0; i < row; ++i) {
+        a[i] = (int *)malloc(col * sizeof(int));
+    }
+    
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < col; ++j) {
+            if (i == 2 && j == 2) {
+                a[i][j] = 0;
+            } else {
+                a[i][j] = i + 1;
+            }
+        }
+    }
+    
+    
+    for(int i=0; i<4; ++i){
+        for(int j=0; j<4; ++j)
+            cout<<a[i][j]<<" ";
+        cout<<endl;
+    }
+    cout<<endl;
+    
+    zeroArray(a, row, col);
+
     for(int i=0; i<4; ++i){
         for(int j=0; j<4; ++j)
             cout<<a[i][j]<<" ";
