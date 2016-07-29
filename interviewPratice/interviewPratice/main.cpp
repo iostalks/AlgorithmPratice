@@ -14,14 +14,19 @@
 #include "1_5.hpp"
 #include "1_6.hpp"
 #include "1_7.hpp"
+#include "1_8.hpp"
+
 
 int main(int argc, const char * argv[]) {
-    
+  
+}
+
+void testSessionFirst() {
 #if 0
     // 1.1
     string s_1_1 = "abcde\nf\n";
     cout << isUnique1(s_1_1) << " " << isUnique2(s_1_1) << endl;
-
+    
     
     // 1.2
     char s[] = "ddaeiouff";
@@ -34,7 +39,7 @@ int main(int argc, const char * argv[]) {
     char s3[] = "ffd";
     char s4[] = "abababc";
     char s5[] = "ccccc";
-
+    
     removeDuplicate0(s1);
     removeDuplicate1(s2);
     removeDuplicate2(s3);
@@ -49,13 +54,13 @@ int main(int argc, const char * argv[]) {
     bool equal = isAnagrams(s, t);
     cout << equal << endl;
     return 0;
-
+    
     // 1.5
     char m[100] = "I an  ";
     repleace1(m);
     cout << m << endl;
-
-
+    
+    
     
     // 1.6
     int a[4][4] = {
@@ -76,9 +81,9 @@ int main(int argc, const char * argv[]) {
             cout<<a[i][j]<<" ";
         cout<<endl;
     }
-#endif
     
     
+    // 1.7
     int **a;
     int row = 4;
     int col = 5;
@@ -108,10 +113,16 @@ int main(int argc, const char * argv[]) {
     cout<<endl;
     
     zeroArray(a, row, col);
-
+    
     for(int i=0; i<4; ++i){
         for(int j=0; j<4; ++j)
             cout<<a[i][j]<<" ";
         cout<<endl;
     }
+    
+    // 1.8
+    string s1 = "apple";
+    string s2 = "pleap";
+    cout<<isRotation(s1, s2)<<endl;
+#endif
 }

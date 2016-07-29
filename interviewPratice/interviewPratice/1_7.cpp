@@ -5,6 +5,14 @@
 //  Created by Jone on 16/7/29.
 //  Copyright © 2016年 Jone. All rights reserved.
 //
+//原文：
+//
+//Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column is set to 0.
+//
+//译文：
+//
+//写一个函数处理一个MxN的矩阵，如果矩阵中某个元素为0，那么把它所在的行和列都置为0.
+
 
 #include "1_7.hpp"
 
