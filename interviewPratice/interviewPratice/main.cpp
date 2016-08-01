@@ -7,19 +7,53 @@
 //
 
 #include <iostream>
-#include "1_1.hpp"
-#include "1_2.hpp"
-#include "1_3.hpp"
-#include "1_4.hpp"
-#include "1_5.hpp"
-#include "1_6.hpp"
-#include "1_7.hpp"
-#include "1_8.hpp"
+//#include "1_1.hpp"
+//#include "1_2.hpp"
+//#include "1_3.hpp"
+//#include "1_4.hpp"
+//#include "1_5.hpp"
+//#include "1_6.hpp"
+//#include "1_7.hpp"
+//#include "1_8.hpp"
+#include "2_1.hpp"
 
+node *init(int a[], int n) {
+    node *head = nullptr, *p = nullptr;
+    for (int i = 0; i < n; ++i) {
+        node *nd = new node;
+        nd -> data = a[i];
+        if (i == 0) {
+            head = p = nd;
+            continue;
+        }
+        p -> next = nd;
+        p = nd;
+    }
+    return head;
+}
+
+void printNode(node *head) {
+    while(head){
+        cout << head->data << " ";
+        head = head->next;
+    }
+}
 
 int main(int argc, const char * argv[]) {
-  
+    
+    // 1.1
+    int n = 10;
+    int a[] = {
+        3, 2, 1, 3, 5, 6, 2, 6, 3, 1
+    };
+    
+    node *head = init(a, n);
+//    removeDumplicateNode0(head);
+    removeDumplicateNode1(head);
+    printNode(head);
 }
+
+
 
 void testSessionFirst() {
 #if 0

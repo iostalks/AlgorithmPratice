@@ -9,6 +9,11 @@
 #ifndef header_hpp
 #define header_hpp
 
+typedef struct Node {
+    int data;
+    Node *next;
+}node;
+
 #include <stdio.h>
 #include <iostream>
 #include <cstring>
