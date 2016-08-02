@@ -16,6 +16,7 @@
 //#include "1_7.hpp"
 //#include "1_8.hpp"
 #include "2_1.hpp"
+#include "2_2.hpp"
 
 node *init(int a[], int n) {
     node *head = nullptr, *p = nullptr;
@@ -41,6 +42,7 @@ void printNode(node *head) {
 
 int main(int argc, const char * argv[]) {
     
+#if 0
     // 1.1
     int n = 10;
     int a[] = {
@@ -51,6 +53,17 @@ int main(int argc, const char * argv[]) {
 //    removeDumplicateNode0(head);
     removeDumplicateNode1(head);
     printNode(head);
+#endif
+    
+    // 1.2
+    int n = 10;
+    int a[] = {
+        9, 2, 1, 3, 5, 6, 2, 6, 3, 1
+    };
+    node *head = init(a, n);
+    node *p = findNthToLast1(head, 6);
+    if(p) cout<<p->data<<endl;
+    else cout << "the length of link is not long enough" << endl;
 }
 
 

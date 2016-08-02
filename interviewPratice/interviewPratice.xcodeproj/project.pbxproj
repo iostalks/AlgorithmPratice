@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE8D4D9D1D4596B400751F80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE8D4D9C1D4596B400751F80 /* main.cpp */; };
+		FEB4E2CD1D5024EF001DD546 /* 2_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEB4E2CB1D5024EF001DD546 /* 2_2.cpp */; };
 		FEDE8DDD1D4ED0CF00A5A255 /* 1_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DCC1D4ED0CF00A5A255 /* 1_1.cpp */; };
 		FEDE8DDE1D4ED0CF00A5A255 /* 1_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DCE1D4ED0CF00A5A255 /* 1_2.cpp */; };
 		FEDE8DDF1D4ED0CF00A5A255 /* 1_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DD01D4ED0CF00A5A255 /* 1_3.cpp */; };
@@ -35,6 +36,8 @@
 		FE8D4D991D4596B400751F80 /* interviewPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = interviewPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8D4D9C1D4596B400751F80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FE8D4DAA1D459D3000751F80 /* header.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = header.hpp; sourceTree = "<group>"; };
+		FEB4E2CB1D5024EF001DD546 /* 2_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 2_2.cpp; sourceTree = "<group>"; };
+		FEB4E2CC1D5024EF001DD546 /* 2_2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 2_2.hpp; sourceTree = "<group>"; };
 		FEDE8DCC1D4ED0CF00A5A255 /* 1_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1_1.cpp; sourceTree = "<group>"; };
 		FEDE8DCD1D4ED0CF00A5A255 /* 1_1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 1_1.hpp; sourceTree = "<group>"; };
 		FEDE8DCE1D4ED0CF00A5A255 /* 1_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1_2.cpp; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 			children = (
 				FEDE8DE61D4ED0E600A5A255 /* 2_1.hpp */,
 				FEDE8DE51D4ED0E600A5A255 /* 2_1.cpp */,
+				FEB4E2CC1D5024EF001DD546 /* 2_2.hpp */,
+				FEB4E2CB1D5024EF001DD546 /* 2_2.cpp */,
 			);
 			path = 2;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			files = (
 				FEDE8DE41D4ED0CF00A5A255 /* 1_8.cpp in Sources */,
 				FEDE8DDE1D4ED0CF00A5A255 /* 1_2.cpp in Sources */,
+				FEB4E2CD1D5024EF001DD546 /* 2_2.cpp in Sources */,
 				FE8D4D9D1D4596B400751F80 /* main.cpp in Sources */,
 				FEDE8DE01D4ED0CF00A5A255 /* 1_4.cpp in Sources */,
 				FEDE8DE21D4ED0CF00A5A255 /* 1_6.cpp in Sources */,
