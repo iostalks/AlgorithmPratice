@@ -17,6 +17,8 @@
 //#include "1_8.hpp"
 #include "2_1.hpp"
 #include "2_2.hpp"
+#include "2_3.hpp"
+#include "2_4.hpp"
 
 node *init(int a[], int n) {
     node *head = nullptr, *p = nullptr;
@@ -38,12 +40,18 @@ void printNode(node *head) {
         cout << head->data << " ";
         head = head->next;
     }
+    cout << endl;
 }
 
 int main(int argc, const char * argv[]) {
-    
 #if 0
-    // 1.1
+    int n = 10;
+    int a[] = {
+        9, 2, 1, 3, 5, 6, 2, 6, 3, 1
+    };
+    node *head = init(a, n);
+
+    // 2.1
     int n = 10;
     int a[] = {
         3, 2, 1, 3, 5, 6, 2, 6, 3, 1
@@ -53,9 +61,9 @@ int main(int argc, const char * argv[]) {
 //    removeDumplicateNode0(head);
     removeDumplicateNode1(head);
     printNode(head);
-#endif
+
     
-    // 1.2
+    // 2.2
     int n = 10;
     int a[] = {
         9, 2, 1, 3, 5, 6, 2, 6, 3, 1
@@ -64,9 +72,37 @@ int main(int argc, const char * argv[]) {
     node *p = findNthToLast1(head, 6);
     if(p) cout<<p->data<<endl;
     else cout << "the length of link is not long enough" << endl;
+    
+    // 2.3
+    int cc = 10;
+    node *c = head;
+    while (--cc) c = c -> next;
+    printNode(head);
+    if (deleteOneNode(c)) {
+        printNode(head);
+    } else {
+        cout << "failue" << endl;
+    }
+#endif
+    
+    // 2.4
+    int n = 3;
+    int a[] = {
+        1, 2, 9
+    };
+    int m = 3;
+    int b[] = {
+        9, 9, 2
+    };
+    
+    node *p = init(a, n);
+    node *q = init(b, m);
+    node *res = addLink(p, q);
+    if(p) printNode(p);
+    if(q) printNode(q);
+    if(res) printNode(res);
+    return 0;
 }
-
-
 
 void testSessionFirst() {
 #if 0
