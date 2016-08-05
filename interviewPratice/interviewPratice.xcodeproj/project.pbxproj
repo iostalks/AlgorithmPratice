@@ -20,6 +20,7 @@
 		FEDE8DE31D4ED0CF00A5A255 /* 1_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DD81D4ED0CF00A5A255 /* 1_7.cpp */; };
 		FEDE8DE41D4ED0CF00A5A255 /* 1_8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DDA1D4ED0CF00A5A255 /* 1_8.cpp */; };
 		FEDE8DE71D4ED0E600A5A255 /* 2_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DE51D4ED0E600A5A255 /* 2_1.cpp */; };
+		FEEEE9651D541D4B00C44015 /* 2_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEEEE9631D541D4B00C44015 /* 2_5.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,8 @@
 		FEDE8DDB1D4ED0CF00A5A255 /* 1_8.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 1_8.hpp; sourceTree = "<group>"; };
 		FEDE8DE51D4ED0E600A5A255 /* 2_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 2_1.cpp; sourceTree = "<group>"; };
 		FEDE8DE61D4ED0E600A5A255 /* 2_1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 2_1.hpp; sourceTree = "<group>"; };
+		FEEEE9631D541D4B00C44015 /* 2_5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 2_5.cpp; sourceTree = "<group>"; };
+		FEEEE9641D541D4B00C44015 /* 2_5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 2_5.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				FEB4E2D41D517614001DD546 /* 2_3.cpp */,
 				FEDB505D1D52C8DB007632A5 /* 2_4.hpp */,
 				FEDB505C1D52C8DA007632A5 /* 2_4.cpp */,
+				FEEEE9641D541D4B00C44015 /* 2_5.hpp */,
+				FEEEE9631D541D4B00C44015 /* 2_5.cpp */,
 			);
 			path = 2;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEEE9651D541D4B00C44015 /* 2_5.cpp in Sources */,
 				FEB4E2D61D517614001DD546 /* 2_3.cpp in Sources */,
 				FEDE8DE41D4ED0CF00A5A255 /* 1_8.cpp in Sources */,
 				FEDE8DDE1D4ED0CF00A5A255 /* 1_2.cpp in Sources */,

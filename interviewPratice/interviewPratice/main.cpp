@@ -15,10 +15,12 @@
 //#include "1_6.hpp"
 //#include "1_7.hpp"
 //#include "1_8.hpp"
+
 #include "2_1.hpp"
 #include "2_2.hpp"
 #include "2_3.hpp"
 #include "2_4.hpp"
+#include "2_5.hpp"
 
 node *init(int a[], int n) {
     node *head = nullptr, *p = nullptr;
@@ -43,64 +45,28 @@ void printNode(node *head) {
     cout << endl;
 }
 
-int main(int argc, const char * argv[]) {
-#if 0
-    int n = 10;
-    int a[] = {
-        9, 2, 1, 3, 5, 6, 2, 6, 3, 1
-    };
-    node *head = init(a, n);
 
-    // 2.1
-    int n = 10;
-    int a[] = {
-        3, 2, 1, 3, 5, 6, 2, 6, 3, 1
-    };
-    
-    node *head = init(a, n);
-//    removeDumplicateNode0(head);
-    removeDumplicateNode1(head);
-    printNode(head);
-
-    
-    // 2.2
-    int n = 10;
-    int a[] = {
-        9, 2, 1, 3, 5, 6, 2, 6, 3, 1
-    };
-    node *head = init(a, n);
-    node *p = findNthToLast1(head, 6);
-    if(p) cout<<p->data<<endl;
-    else cout << "the length of link is not long enough" << endl;
-    
-    // 2.3
-    int cc = 10;
-    node *c = head;
-    while (--cc) c = c -> next;
-    printNode(head);
-    if (deleteOneNode(c)) {
-        printNode(head);
-    } else {
-        cout << "failue" << endl;
+node* initCircle(int a[], int n, int m){
+    node *head = nullptr, *p = nullptr, *q = nullptr;
+    for(int i=0; i<n; ++i){
+        node *nd = new node();
+        nd->data = a[i];
+        if(i==m) q = nd;
+        if(i==0){
+            head = p = nd;
+            continue;
+        }
+        p->next = nd;
+        p = nd;
     }
-#endif
+    p->next = q;
+    return head;
     
-    // 2.4
-    int n = 3;
-    int a[] = {
-        1, 2, 9
-    };
-    int m = 3;
-    int b[] = {
-        9, 9, 2
-    };
+}
+
+
+int main(int argc, const char * argv[]) {
     
-    node *p = init(a, n);
-    node *q = init(b, m);
-    node *res = addLink(p, q);
-    if(p) printNode(p);
-    if(q) printNode(q);
-    if(res) printNode(res);
     return 0;
 }
 
@@ -208,4 +174,79 @@ void testSessionFirst() {
     string s2 = "pleap";
     cout<<isRotation(s1, s2)<<endl;
 #endif
+}
+
+void testSectionTwo() {
+#if 0
+    int n = 10;
+    int a[] = {
+        9, 2, 1, 3, 5, 6, 2, 6, 3, 1
+    };
+    node *head = init(a, n);
+    
+    // 2.1
+    int n = 10;
+    int a[] = {
+        3, 2, 1, 3, 5, 6, 2, 6, 3, 1
+    };
+    
+    node *head = init(a, n);
+    //    removeDumplicateNode0(head);
+    removeDumplicateNode1(head);
+    printNode(head);
+    
+    
+    // 2.2
+    int n = 10;
+    int a[] = {
+        9, 2, 1, 3, 5, 6, 2, 6, 3, 1
+    };
+    node *head = init(a, n);
+    node *p = findNthToLast1(head, 6);
+    if(p) cout<<p->data<<endl;
+    else cout << "the length of link is not long enough" << endl;
+    
+    // 2.3
+    int cc = 10;
+    node *c = head;
+    while (--cc) c = c -> next;
+    printNode(head);
+    if (deleteOneNode(c)) {
+        printNode(head);
+    } else {
+        cout << "failue" << endl;
+    }
+    
+    
+    // 2.4
+    int n = 3;
+    int a[] = {
+        1, 2, 9
+    };
+    int m = 3;
+    int b[] = {
+        9, 9, 2
+    };
+    
+    node *p = init(a, n);
+    node *q = init(b, m);
+    node *res = addLink(p, q);
+    if(p) printNode(p);
+    if(q) printNode(q);
+    if(res) printNode(res);
+    
+
+    
+    // 2.5
+    int n = 10, m = 5;// m<n
+    int a[] = {
+        3, 2, 1, 3, 5, 6, 2, 6, 3, 1
+    };
+    node *head = initCircle(a, n, m);
+    //node *p = loopstart(head);
+    node *p = loopstart(head);
+    if(p)
+        cout<<p->data<<endl;
+    
+    #endif
 }
