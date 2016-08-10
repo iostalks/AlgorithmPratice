@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2F68111D5960AC0032FB44 /* 3_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE2F680F1D5960AC0032FB44 /* 3_2.cpp */; };
+		FE2F68141D5AB5700032FB44 /* 3_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE2F68121D5AB5700032FB44 /* 3_3.cpp */; };
 		FE8D4D9D1D4596B400751F80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE8D4D9C1D4596B400751F80 /* main.cpp */; };
 		FEB4E2CD1D5024EF001DD546 /* 2_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEB4E2CB1D5024EF001DD546 /* 2_2.cpp */; };
 		FEB4E2D61D517614001DD546 /* 2_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEB4E2D41D517614001DD546 /* 2_3.cpp */; };
+		FECF02131D580CBD0072AC39 /* 3_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FECF02111D580CBD0072AC39 /* 3_1.cpp */; };
 		FEDB505E1D52C8DB007632A5 /* 2_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDB505C1D52C8DA007632A5 /* 2_4.cpp */; };
 		FEDE8DDD1D4ED0CF00A5A255 /* 1_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DCC1D4ED0CF00A5A255 /* 1_1.cpp */; };
 		FEDE8DDE1D4ED0CF00A5A255 /* 1_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8DCE1D4ED0CF00A5A255 /* 1_2.cpp */; };
@@ -36,6 +39,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FE2F680F1D5960AC0032FB44 /* 3_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3_2.cpp; sourceTree = "<group>"; };
+		FE2F68101D5960AC0032FB44 /* 3_2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 3_2.hpp; sourceTree = "<group>"; };
+		FE2F68121D5AB5700032FB44 /* 3_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3_3.cpp; sourceTree = "<group>"; };
+		FE2F68131D5AB5700032FB44 /* 3_3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 3_3.hpp; sourceTree = "<group>"; };
 		FE8D4D991D4596B400751F80 /* interviewPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = interviewPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8D4D9C1D4596B400751F80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FE8D4DAA1D459D3000751F80 /* header.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = header.hpp; sourceTree = "<group>"; };
@@ -43,6 +50,8 @@
 		FEB4E2CC1D5024EF001DD546 /* 2_2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 2_2.hpp; sourceTree = "<group>"; };
 		FEB4E2D41D517614001DD546 /* 2_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 2_3.cpp; sourceTree = "<group>"; };
 		FEB4E2D51D517614001DD546 /* 2_3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 2_3.hpp; sourceTree = "<group>"; };
+		FECF02111D580CBD0072AC39 /* 3_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3_1.cpp; sourceTree = "<group>"; };
+		FECF02121D580CBD0072AC39 /* 3_1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 3_1.hpp; sourceTree = "<group>"; };
 		FEDB505C1D52C8DA007632A5 /* 2_4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 2_4.cpp; sourceTree = "<group>"; };
 		FEDB505D1D52C8DB007632A5 /* 2_4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 2_4.hpp; sourceTree = "<group>"; };
 		FEDE8DCC1D4ED0CF00A5A255 /* 1_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 1_1.cpp; sourceTree = "<group>"; };
@@ -97,12 +106,26 @@
 		FE8D4D9B1D4596B400751F80 /* interviewPratice */ = {
 			isa = PBXGroup;
 			children = (
+				FECF02101D580CB20072AC39 /* 3 */,
 				FEDE8DCB1D4ED0CF00A5A255 /* 1 */,
 				FEDE8DDC1D4ED0CF00A5A255 /* 2 */,
 				FE8D4DAA1D459D3000751F80 /* header.hpp */,
 				FE8D4D9C1D4596B400751F80 /* main.cpp */,
 			);
 			path = interviewPratice;
+			sourceTree = "<group>";
+		};
+		FECF02101D580CB20072AC39 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				FECF02121D580CBD0072AC39 /* 3_1.hpp */,
+				FECF02111D580CBD0072AC39 /* 3_1.cpp */,
+				FE2F68101D5960AC0032FB44 /* 3_2.hpp */,
+				FE2F680F1D5960AC0032FB44 /* 3_2.cpp */,
+				FE2F68131D5AB5700032FB44 /* 3_3.hpp */,
+				FE2F68121D5AB5700032FB44 /* 3_3.cpp */,
+			);
+			path = 3;
 			sourceTree = "<group>";
 		};
 		FEDE8DCB1D4ED0CF00A5A255 /* 1 */ = {
@@ -208,11 +231,14 @@
 				FEB4E2CD1D5024EF001DD546 /* 2_2.cpp in Sources */,
 				FE8D4D9D1D4596B400751F80 /* main.cpp in Sources */,
 				FEDE8DE01D4ED0CF00A5A255 /* 1_4.cpp in Sources */,
+				FE2F68141D5AB5700032FB44 /* 3_3.cpp in Sources */,
 				FEDE8DE21D4ED0CF00A5A255 /* 1_6.cpp in Sources */,
 				FEDE8DE11D4ED0CF00A5A255 /* 1_5.cpp in Sources */,
 				FEDE8DE71D4ED0E600A5A255 /* 2_1.cpp in Sources */,
 				FEDE8DDD1D4ED0CF00A5A255 /* 1_1.cpp in Sources */,
 				FEDE8DDF1D4ED0CF00A5A255 /* 1_3.cpp in Sources */,
+				FE2F68111D5960AC0032FB44 /* 3_2.cpp in Sources */,
+				FECF02131D580CBD0072AC39 /* 3_1.cpp in Sources */,
 				FEDE8DE31D4ED0CF00A5A255 /* 1_7.cpp in Sources */,
 				FEDB505E1D52C8DB007632A5 /* 2_4.cpp in Sources */,
 			);

@@ -22,6 +22,8 @@
 #include "2_4.hpp"
 #include "2_5.hpp"
 
+#include "3_1.hpp"
+
 node *init(int a[], int n) {
     node *head = nullptr, *p = nullptr;
     for (int i = 0; i < n; ++i) {
@@ -66,7 +68,7 @@ node* initCircle(int a[], int n, int m){
 
 
 int main(int argc, const char * argv[]) {
-    
+        
     return 0;
 }
 

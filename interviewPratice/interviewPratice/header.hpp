@@ -17,5 +17,6 @@ typedef struct Node {
 #include <stdio.h>
 #include <iostream>
 #include <cstring>
+#include <assert.h>
 using namespace std;
 #endif /* header_hpp */
